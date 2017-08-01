@@ -36,6 +36,12 @@ public class PhotographerTest{
     assertEquals("Make: a. Model: b. Resolution: c", digitalCamera.printDetails());
   }
 
+  @Test 
+  public void canPrintAnalogueCameraDetails() {
+      analogueCamera = new AnalogueCamera("a", "b", "c");
+      assertEquals("Make: a. Model: b. Resolution: c", analogueCamera.printDetails());
+  }
+
 
 
 

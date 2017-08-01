@@ -11,7 +11,7 @@ public class AnalogueCamera implements Printable{
   }
 
   public String printDetails() {
-    return "a";
+     return "Make: " + this.make + ". Model: " + this.model + ". Resolution: " + this.resolution;
   }
 
 }
