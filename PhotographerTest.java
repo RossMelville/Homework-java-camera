@@ -5,11 +5,16 @@ public class PhotographerTest{
 
   Photographer photographer;
   Camera camera;
+  DigitalCamera digitalCamera;
+  AnalogueCamera analogueCamera;
 
   @Before
   public void before() {
     photographer = new Photographer();
     camera = new Camera();
+    analogueCamera = new AnalogueCamera("Sony", "ILCE5100l", "Lo");
+    digitalCamera = new DigitalCamera("Nikon", "34T", "Hi");
+
   }
   
   @Test
@@ -25,7 +30,11 @@ public class PhotographerTest{
     assertEquals(0, photographer.cameraCount());
   }
 
-
+  @Test
+  public void canPrintDigitalCameraDetails() {
+    digitalCamera = new DigitalCamera("a", "b", "c");
+    assertEquals("Make: a. Model: b. Resolution: c", digitalCamera.printDetails());
+  }
 
 
 

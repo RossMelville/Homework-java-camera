@@ -9,9 +9,9 @@ public class AnalogueCamera implements Printable{
     this.model = model;
     this.resolution = resolution;
   }
-  
+
   public String printDetails() {
-    return "Analogue";
+    return "a";
   }
 
 }

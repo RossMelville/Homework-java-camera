@@ -11,7 +11,7 @@ public class DigitalCamera implements Printable{
   }
 
   public String printDetails() {
-    return "Digital";
+     return "Make: " + this.make + ". Model: " + this.model + ". Resolution: " + this.resolution;
   }
 
 }
