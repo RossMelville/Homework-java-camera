@@ -53,7 +53,12 @@ public class PhotographerTest{
       assertEquals("Make: a. Model: b. Resolution: c", analogueCamera.printDetails());
   }
 
-
+  @Test
+  public void canPrintAllCameraDetails() {
+    analogueCamera = new AnalogueCamera("a", "b", "c");
+    photographer.addCamera( analogueCamera );
+    assertEquals("Make: a. Model: b. Resolution: c", photographer.printAll());
+  }
 
 
 }

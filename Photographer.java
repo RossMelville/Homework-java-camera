@@ -20,5 +20,17 @@ public class Photographer {
     this.cameras.remove( camera );
   }
 
+  
+
+  // public Printable printAll() {
+  //   for( int c = 0; c < cameraCount; c++) {
+  //     if ((DigitalCamera) camera[c]) {
+  //       camera.printDetails;
+  //     } 
+  //     else ((AnalogueCamera) camera[c]) {
+  //       camera.printDetails;
+  //     }
+  //   }
+  // }
 
 }
